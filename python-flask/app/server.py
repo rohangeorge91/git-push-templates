@@ -1,9 +1,8 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, request
 import requests
 import json
 
 import config
-
 
 app = Flask(__name__)
 
@@ -50,7 +49,7 @@ def get_role(role):
     if role in roles:
         return "Hey you have the %s role" % role
 
-    return make_response(403, 'DENIED: Only a user with %s role can access this endpoint' % role)
+    return ('DENIED: Only a user with %s role can access this endpoint' % role, 403)
 
 if __name__ == '__main__':
     app.run(debug=True)
