@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
       @headers  = { 'Authorization' => 'Bearer ' + admin_token }
     else
       @data_url = 'http://data.hasura/v1/query/'
-      @headers  = { 'X-Hasura-Role' => 'admin', 'X-Hasura-User_Id' => '1' }
+      @headers  = { 'X-Hasura-Role' => 'admin', 'X-Hasura-User-Id' => '1' }
     end
   end
 
