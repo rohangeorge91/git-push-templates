@@ -39,11 +39,7 @@ class ApplicationController < ActionController::Base
     req.body = query.to_json
     response = http.request(req)
 
-    unless response.is_a?(Net::HTTPSuccess)
-      render json: response.body, status: response.code and return
-    end
-
-    render json: response.body
+    render json: response.body, status: response.code
   end
 
   def get_role
