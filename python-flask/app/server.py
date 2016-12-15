@@ -28,8 +28,10 @@ def hello():
     query = {
         'type': 'select',
         'args': {
-            'schema': 'hdb_catalog',
-            'table': 'hdb_table',
+            'table': {
+                'name': 'hdb_table',
+                'schema': 'hdb_catalog'
+            },
             'columns': ['*.*'],
             'where': {'table_schema': 'public'}
         }

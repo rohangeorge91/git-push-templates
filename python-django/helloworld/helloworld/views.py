@@ -17,8 +17,10 @@ def get_schema(request):
     query = {
         'type': 'select',
         'args': {
-            'schema': 'hdb_catalog',
-            'table': 'hdb_table',
+            'table': {
+                'schema': 'hdb_catalog',
+                'name': 'hdb_table'
+            },
             'columns': ['*.*'],
             'where': {'table_schema': 'public'}
         }

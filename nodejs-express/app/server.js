@@ -14,7 +14,7 @@ if (DEVELOPMENT) {
   headers.Authorization = 'Bearer ' + process.env.ADMIN_TOKEN;
   url = `https://data.${process.env.PROJECT_NAME}.hasura-app.io`;
 } else {
-  url = 'http://data.default';
+  url = 'http://data.hasura';
 }
 
 // Make a request to the data API as the admin role for full access
@@ -29,8 +29,10 @@ app.get('/', function (req, res) {
     body: JSON.stringify({
       type: 'select',
       args: {
-        schema: 'hdb_catalog',
-        table: 'hdb_table',
+        table: {
+          schema: 'hdb_catalog',
+          name: 'hdb_table'
+        },
         columns: ['*.*'],
         where: { table_schema: 'public' }
     }})
