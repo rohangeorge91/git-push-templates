@@ -1,1 +1,26 @@
-["nodejs-express", "python-django", "python-flask", "ruby-rails"]
+[{
+	"name": "nodejs",
+	"framework": [{
+		"name": "express",
+		"fullName": "nodejs-express",
+		"path": "https://github.com/hasura/git-push-templates/tree/master/nodejs-express"
+	}]
+}, {
+	"name": "python",
+	"framework": [{
+		"name": "django",
+		"fullName": "python-django",
+		"path": "https://github.com/hasura/git-push-templates/tree/master/python-django"
+	}, {
+		"name": "express",
+		"fullName": "python-flask",
+		"path": "https://github.com/hasura/git-push-templates/tree/master/python-flask"
+	}]
+}, {
+	"name": "ruby",
+	"framework": [{
+		"name": "rails",
+		"fullName": "ruby-rails",
+		"path": "https://github.com/hasura/git-push-templates/tree/master/ruby-rails"
+	}]
+}]
