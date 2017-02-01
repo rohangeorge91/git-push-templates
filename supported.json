@@ -12,7 +12,7 @@
 		"fullName": "python-django",
 		"path": "https://github.com/hasura/git-push-templates/tree/master/python-django"
 	}, {
-		"name": "express",
+		"name": "flask",
 		"fullName": "python-flask",
 		"path": "https://github.com/hasura/git-push-templates/tree/master/python-flask"
 	}]
