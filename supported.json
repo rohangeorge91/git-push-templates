@@ -1,13 +1,13 @@
 [{
 	"name": "nodejs",
-	"framework": [{
+	"frameworks": [{
 		"name": "express",
 		"fullName": "nodejs-express",
 		"path": "https://github.com/hasura/git-push-templates/tree/master/nodejs-express"
 	}]
 }, {
 	"name": "python",
-	"framework": [{
+	"frameworks": [{
 		"name": "django",
 		"fullName": "python-django",
 		"path": "https://github.com/hasura/git-push-templates/tree/master/python-django"
@@ -18,7 +18,7 @@
 	}]
 }, {
 	"name": "ruby",
-	"framework": [{
+	"frameworks": [{
 		"name": "rails",
 		"fullName": "ruby-rails",
 		"path": "https://github.com/hasura/git-push-templates/tree/master/ruby-rails"
