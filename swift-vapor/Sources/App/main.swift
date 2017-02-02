@@ -85,6 +85,5 @@ drop.get(String.self) { (request,role) -> ResponseRepresentable in
     return Response(status: Status.unauthorized, body: "Denied. No roles allowed")
 }
 
-drop.resource("posts", PostController())
 
 drop.run()
