@@ -60,6 +60,9 @@
  * HASURA ENVIRONMENT
  *---------------------------------------------------------------
  *
+ * Development environment will require PROJECT_NAME, ADMIN_TOKEN environment variables to be set. 
+ *
+ * Production environment set DATA_HEADERS to admin role for full access.
  */
 switch (ENVIRONMENT)
 {
