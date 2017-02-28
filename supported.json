@@ -17,6 +17,13 @@
 		"path": "https://github.com/hasura/git-push-templates/tree/master/python-flask"
 	}]
 }, {
+	"name": "go",
+	"frameworks": [{
+		"name": "raw",
+		"fullName": "go-raw",
+		"path": "https://github.com/hasura/git-push-templates/tree/master/go-raw"
+	}]
+}, {
 	"name": "ruby",
 	"frameworks": [{
 		"name": "rails",
